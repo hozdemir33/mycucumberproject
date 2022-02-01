@@ -1,18 +1,25 @@
+
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.CommonPageElements;
+import pages.MoneyTransferPage;
 
-public class MoneyTransferDefs {
+public class MoneyTransferStepDefs {
+
+    CommonPageElements commonPageElements = new CommonPageElements();
+
+    MoneyTransferPage moneyTransferPage = new MoneyTransferPage();
 
     @Given("user clicks on my operations")
     public void user_clicks_on_my_operations() {
 
     }
-
     @Given("user clicks on transfer money")
     public void user_clicks_on_transfer_money() {
+
     }
     @When("user select the current account to transfer money from")
     public void user_select_the_current_account_to_transfer_money_from() {
@@ -32,7 +39,7 @@ public class MoneyTransferDefs {
     }
     @Then("user makes the money transfer and verify success message")
     public void user_makes_the_money_transfer_and_verify_success_message() {
+
     }
+
 }
-
-

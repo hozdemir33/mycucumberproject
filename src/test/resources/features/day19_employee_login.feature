@@ -10,15 +10,13 @@ Feature: employee_login
     Then close the application
 
     Examples: credentials
-      |username                  | password  |
-
+      |username                  |password              |
       |gino.wintheiser           |%B6B*q1!TH            |
-      |dallas.batz               |dOWjuXz8*es6        |
+      |dallas.batz               |dOWjuXz8*es6          |
       |leonel.skiles             |x3uvY0f8hw1T          |
       |freddy.veum               |*f**3dafHW3Jx         |
       |syble.jerde               |2*0R*!K&GB3T%G        |
       |julius.keebler            |F&134#R%0d            |
-
 
 
 

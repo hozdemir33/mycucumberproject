@@ -1,3 +1,4 @@
+
 package runners;
 
 import io.cucumber.junit.Cucumber;
@@ -8,10 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@money_transfer",
+        tags = "@user_registration",
         dryRun = false
-)
 
+)
 public class Runner {
 }
 /*Runner is used to run the feature files(Test Cases)
@@ -33,3 +34,4 @@ public class Runner {
  *           : dryRun = false default behaviour. Runs the test on hte browser while checking the missing steps
  *           : dryRun = true do not run tests on the browser and check if there is any missing step definition
  * */
+

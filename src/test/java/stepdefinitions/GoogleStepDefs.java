@@ -62,5 +62,4 @@ public class GoogleStepDefs {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains(string));
     }
-
 }

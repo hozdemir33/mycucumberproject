@@ -9,7 +9,6 @@ import utilities.Driver;
 public class RegistrationStepDefs {
 
     RegistrationPage registrationPage = new RegistrationPage();
-
     @Given("user is on the registration page")
     public void user_is_on_the_registration_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmiBank_registration_url"));
@@ -29,10 +28,12 @@ public class RegistrationStepDefs {
         Driver.waitAndSendText(registrationPage.firstnameTextbox,string);
         Driver.waitAndSendText(registrationPage.lastnameTextbox,string2);
 
+
     }
     @Given("user provides address {string}")
     public void user_provides_address(String string) {
         Driver.waitAndSendText(registrationPage.addressTextbox,string);
+
     }
     @Given("user provides phoneNumber {string}")
     public void user_provides_phone_number(String string) {
@@ -45,6 +46,7 @@ public class RegistrationStepDefs {
     @Given("user provides email {string}")
     public void user_provides_email(String string) {
         Driver.waitAndSendText(registrationPage.emailTextbox,string);
+
     }
     @Given("user provides the firstPassword as {string} and secondPassword as {string}")
     public void user_provides_the_first_password_as_and_second_password_as(String string, String string2) {
@@ -55,9 +57,8 @@ public class RegistrationStepDefs {
     public void user_clicks_on_the_register_button_and_see_the_success_message_as(String string) {
 //        registrationPage.registerButton.click();
         Driver.waitAndClick(registrationPage.registerButton);
+        Driver.wait(1);
         Assert.assertTrue(registrationPage.successMessageToastContainer.isDisplayed());
 
     }
 }
-
-

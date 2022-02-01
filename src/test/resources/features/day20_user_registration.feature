@@ -1,5 +1,5 @@
 @user_registration
-Feature: registation feature
+Feature: registration feature
 
   Scenario Outline: user should be able to register
 
@@ -11,9 +11,8 @@ Feature: registation feature
     And user provides username "<username>"
     And user provides email "<email>"
     And user provides the firstPassword as "<firstPassword>" and secondPassword as "<secondPassword>"
-    And user clicks on the register button and see the success message as "<successMessage>"
+    Then user clicks on the register button and see the success message as "<successMessage>"
 
     Examples: user info
-
-     |SSN|firstName|lastName|address|phoneNumber|username|email|firstPassword|secondPassword|successMessage|
-     |393-45-6378|New User|last|Milky way|456-279-5588|utilisateur|kalin54@gmail.com|Utilisateur123.|Utilisateur123.|successfully registered|
+      |SSN|firstName|lastName|address|phoneNumber|username|email|firstPassword|secondPassword|successMessage|
+      |883-05-1709|New User|last|Milky way|456-279-5588|utilisateur|kalin54@gmail.com|Utilisateur123.|Utilisateur123.|successfully registered|
