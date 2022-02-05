@@ -2,6 +2,7 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import pages.LoginPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -31,7 +32,27 @@ public class LoginStepDefs {
     }
     @Given("user clicks on the login button")
     public void user_clicks_on_the_login_button() {
+
         loginPage.loginButton.click();
+    }
+
+    @Given("user enters admin_id and admin_password")
+    public void user_enters_admin_id_and_admin_password(io.cucumber.datatable.DataTable dataTable) {
+        // Write code here that turns the phrase above into concrete actions
+        // For automatic transformation, change DataTable to one of
+        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+        // Double, Byte, Short, Long, BigInteger or BigDecimal.
+
+
+
+    }
+    @Then("verify the login is successful")
+    public void verify_the_login_is_successful() {
+
+
+
+
     }
 
 }

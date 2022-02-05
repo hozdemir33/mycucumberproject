@@ -1,4 +1,3 @@
-
 @scenario_outline_search
 Feature: search_using_scenario_outline
   Background: user_is_on_the_page
@@ -23,4 +22,4 @@ Feature: search_using_scenario_outline
 #  Scenario outline must followed by Example keyword
 #  Examples is used to pass test data
 #  Scenario outline is especially used for Data Driven Testing(DDT)
-#  Data Driven Testing means use multiple external test data. It is like usi
+#  Data Driven Testing means use multiple external test data. It is like using excel data

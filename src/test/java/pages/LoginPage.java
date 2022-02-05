@@ -37,11 +37,12 @@ public class LoginPage {
     //    Creating a reusable login method
     //    I will call this in the test classes to login
     public void loginApplication(String userName, String pass){
-    loginDropdown.click();
-    signInButton.click();
-    username.sendKeys(userName);
-    password.sendKeys(pass);
-    loginButton.click();
+
+        loginDropdown.click();
+        signInButton.click();
+        username.sendKeys(userName);
+        password.sendKeys(pass);
+        loginButton.click();
 
     }
 }

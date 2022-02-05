@@ -44,5 +44,5 @@ Feature: Google_Search_Functionality
 #Known as non technical part. Everybody can read and understand
 
 #What is a step definition?
-#We write our Java code in the step definitions
-#This has the technical part.Only technical people can understand
+#We write our Java code in the stepdefinitions(FOLDER)
+#This has the technical part. Only technical people can understand

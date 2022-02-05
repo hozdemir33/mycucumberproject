@@ -1,11 +1,13 @@
 
 package stepdefinitions;
 
+import io.cucumber.java.DefaultDataTableCellTransformer;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.CommonPageElements;
 import pages.MoneyTransferPage;
+import utilities.Driver;
 
 public class MoneyTransferStepDefs {
 
@@ -16,10 +18,11 @@ public class MoneyTransferStepDefs {
     @Given("user clicks on my operations")
     public void user_clicks_on_my_operations() {
 
+
     }
     @Given("user clicks on transfer money")
     public void user_clicks_on_transfer_money() {
-
+        Driver.waitAndClick(commonPageElements.moneyTransferOption);
     }
     @When("user select the current account to transfer money from")
     public void user_select_the_current_account_to_transfer_money_from() {

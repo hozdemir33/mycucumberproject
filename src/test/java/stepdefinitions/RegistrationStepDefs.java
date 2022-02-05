@@ -8,7 +8,8 @@ import utilities.Driver;
 
 public class RegistrationStepDefs {
 
-    RegistrationPage registrationPage = new RegistrationPage();
+    RegistrationPage registrationPage = new RegistrationPage(); //We need to generare this. 
+
     @Given("user is on the registration page")
     public void user_is_on_the_registration_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmiBank_registration_url"));
