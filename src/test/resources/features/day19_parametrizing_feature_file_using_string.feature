@@ -15,3 +15,13 @@ Feature: Search_Functionality
     When user search for "tea pot"
     Then verify the result has "tea pot"
     Then close the application
+
+  Scenario: TC03_tesla_search
+    When user search for "tesla"
+    Then verify the result has "tesla"
+    Then close the application
+
+  Scenario: TC04_honda_search
+    When user search for "honda"
+    Then verify the result has "honda"
+    Then close the application

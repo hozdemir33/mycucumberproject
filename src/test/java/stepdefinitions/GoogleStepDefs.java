@@ -31,19 +31,17 @@ public class GoogleStepDefs {
 
     @When("user search for Tea Pot on google")
     public void user_search_for_tea_pot_on_google() {
-
         googlePage.googleSearchBox.sendKeys("Tea Pot"+Keys.ENTER);
     }
-
     @Then("verify the result has Tea Pot related results")
     public void verify_the_result_has_tea_pot_related_results() {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains("Tea Pot"));
+        Assert.assertTrue(false);//FAILING ON PURPOSE
     }
 
     @When("user search for flower on google")
     public void user_search_for_flower_on_google() {
-
         googlePage.googleSearchBox.sendKeys("flower"+Keys.ENTER);
     }
     @Then("verify the result has flower related results")
@@ -58,7 +56,6 @@ public class GoogleStepDefs {
 
     @When("user search for {string}")
     public void user_search_for(String string) {
-
         googlePage.googleSearchBox.sendKeys(string+Keys.ENTER);
     }
     @Then("verify the result has {string}")
@@ -66,4 +63,5 @@ public class GoogleStepDefs {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains(string));
     }
+
 }

@@ -31,11 +31,12 @@ Feature: Google_Search_Functionality
     When user search for Tea Pot on google
     Then verify the result has Tea Pot related results
 
-#   Flower scenario
-    @flower_search @wip
-    Scenario: TC03_flower_search
+#  Flower scenario
+  @flower_search @wip
+  Scenario: TC03_flower_search
     When user search for flower on google
     Then verify the result has flower related results
+
 
 #What is a feature file?
 #We write our test scenarios in feature files.
@@ -44,5 +45,5 @@ Feature: Google_Search_Functionality
 #Known as non technical part. Everybody can read and understand
 
 #What is a step definition?
-#We write our Java code in the stepdefinitions(FOLDER)
-#This has the technical part. Only technical people can understand
+#We write our Java code in the step definitions
+#This has the technical part.Only technical people can understand

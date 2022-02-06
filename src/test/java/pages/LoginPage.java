@@ -7,15 +7,15 @@ import utilities.Driver;
 
 public class LoginPage {
 
-        //    Find the page object in this class
-        //    creating the constructor to initialize the page element
-        //    PageFactory.initElements is used to initialize this page objects
+    //    Find the page object in this class
+    //    creating the constructor to initialize the page element
+    //    PageFactory.initElements is used to initialize this page objects
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-        //    employee info
-        //   gino.wintheiser
-        //  %B6B*q1!TH
+    //    employee info
+    //   gino.wintheiser
+    //  %B6B*q1!TH
     @FindBy(id="account-menu")
     public WebElement loginDropdown;
 
@@ -37,7 +37,6 @@ public class LoginPage {
     //    Creating a reusable login method
     //    I will call this in the test classes to login
     public void loginApplication(String userName, String pass){
-
         loginDropdown.click();
         signInButton.click();
         username.sendKeys(userName);

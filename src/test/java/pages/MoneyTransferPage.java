@@ -6,10 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class MoneyTransferPage {
-
         public MoneyTransferPage(){
-
-            PageFactory.initElements(Driver.getDriver(),this);
+                PageFactory.initElements(Driver.getDriver(),this);
         }
         @FindBy(id = "fromAccountId")
         public WebElement transferFrom;
@@ -17,6 +15,8 @@ public class MoneyTransferPage {
         public WebElement transferTo;
         @FindBy(id = "balance")
         public WebElement balance;
+        @FindBy(id = "balancecent")
+        public WebElement balanceCent;
         @FindBy(id="description")
         public WebElement description;
         @FindBy(id = "make-transfer")
