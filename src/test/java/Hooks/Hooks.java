@@ -16,8 +16,8 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario){
-        final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         if (scenario.isFailed()) {
+            final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 //            Is a scenario fails, then take the screenshot!!!!!
             scenario.attach(screenshot, "image/png","screenshots");
         }

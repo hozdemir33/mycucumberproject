@@ -1,25 +1,20 @@
-
 package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
         plugin = {
                 "pretty",//This is used for more readable reports or outputs
                 "html:target/default-cucumber-reports.html",//Use this reports
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failedRerun.txt"
+
         },
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","Hooks"},//run stepdefinitions and Hooks folder
-        tags = "@google_search",
-        dryRun = false
-
+        tags = "@excel_login",
+        dryRun = true
 )
 public class Runner {
 }
@@ -42,6 +37,3 @@ public class Runner {
  *           : dryRun = false default behaviour. Runs the test on hte browser while checking the missing steps
  *           : dryRun = true do not run tests on the browser and check if there is any missing step definition
  * */
-
-
-

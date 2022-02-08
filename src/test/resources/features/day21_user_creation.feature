@@ -1,5 +1,5 @@
 
-@admin_sign_in
+@admin_sign_in @smoke
 Feature:user_creation
 
   Scenario Outline:
@@ -8,5 +8,5 @@ Feature:user_creation
 
     Examples:
 
-    |username|password|
-    |CWoburn          |  Cw192837?        |
+    |username  | password|
+    |CWoburn   |Cw192837?|

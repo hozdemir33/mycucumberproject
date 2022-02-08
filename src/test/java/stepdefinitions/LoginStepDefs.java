@@ -1,7 +1,6 @@
 
 package stepdefinitions;
 
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -71,9 +70,4 @@ public class LoginStepDefs {
         Driver.wait(1);
         Assert.assertTrue(commonPageElements.myOperations.isDisplayed());
     }
-
-
-
 }
-
-

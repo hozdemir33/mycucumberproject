@@ -9,7 +9,6 @@ public class UserManagementPage {
     public UserManagementPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//*[text()='Create a new user']")
     public WebElement createNewUserButton;
     @FindBy(id = "login")
@@ -28,7 +27,6 @@ public class UserManagementPage {
     public WebElement backButton;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveButton;
-
 
 }
 
