@@ -52,11 +52,11 @@ merged: a p b q   r   s
         String str2="klm";
 
 
-//    StringBuilder sc=new StringBuilder();
-//                 sc.append(str1).append(str2);
-//             String CombinedStrings1and2=  sc.toString();
-//        System.out.println(CombinedStrings1and2);
-//
+    StringBuilder sc=new StringBuilder();
+                 sc.append(str1).append(str2);
+             String CombinedStrings1and2=  sc.toString();
+        System.out.println(CombinedStrings1and2);
+
 
 
 
