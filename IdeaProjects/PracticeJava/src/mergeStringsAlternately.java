@@ -44,8 +44,6 @@ merged: a p b q   r   s
 //
 //        StringBuilder str1=new StringBuilder();
 //
-//
-
 
 
         String str1="abc";
@@ -56,8 +54,6 @@ merged: a p b q   r   s
                  sc.append(str1).append(str2);
              String CombinedStrings1and2=  sc.toString();
         System.out.println(CombinedStrings1and2);
-
-
 
 
 
