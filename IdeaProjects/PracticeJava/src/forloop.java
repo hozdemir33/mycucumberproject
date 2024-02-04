@@ -1,8 +1,9 @@
 public class forloop {
 
 
-    public static void main(String[] args) {
 
+
+        public static void main(String[] args) {
 
         int y = 0;
 
@@ -15,11 +16,10 @@ public class forloop {
         }
 
 
-
         int x=1;
 
         while(x<10){
-            System.out.println(x);
+            //System.out.println(x);
             x++;
 
         }
@@ -34,6 +34,9 @@ public class forloop {
         GIT PUSH
 
          */
+
+
+
 
     }
 }
