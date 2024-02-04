@@ -24,5 +24,16 @@ public class forloop {
 
         }
 
+
+        /*
+
+        from the TERMINAL
+
+        GIT ADD .
+        GIT COMMIT -M "COMMENT HERE"
+        GIT PUSH
+
+         */
+
     }
 }
