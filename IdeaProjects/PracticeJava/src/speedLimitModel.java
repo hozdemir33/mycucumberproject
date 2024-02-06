@@ -20,7 +20,7 @@ public class speedLimitModel {
 
         //===========================
 
-        int newSpeed = speedLimit(20);
+     int newSpeed= speedLimit(12);
         System.out.println(newSpeed);
 
 
