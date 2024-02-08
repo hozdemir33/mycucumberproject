@@ -1,5 +1,10 @@
 public class speedLimitModel {
 
+    static void myMethodHello(){
+        System.out.println("please SAY HELLO....");
+
+    }
+
     static void myMethod() {
         System.out.println("I just got executed!");
     }
@@ -22,6 +27,10 @@ public class speedLimitModel {
 
      int newSpeed= speedLimit(12);
         System.out.println(newSpeed);
+
+speedLimitModel SpeedLimitModel=new speedLimitModel();
+
+     myMethodHello();
 
 
     }
