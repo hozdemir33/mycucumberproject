@@ -8,5 +8,17 @@ public class Sheep implements Sheeps {
     @Override
     public void wool() {
 
+
     }
 }
+
+
+/*
+Interface classes ::
+
+
+
+Abstract classes::
+
+
+ */
